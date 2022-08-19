@@ -1,7 +1,7 @@
 <launch>
     <node pkg="yolov6-ros" type="detect.py" name="detect" output="screen" ns="yolov6">
         <!-- Download the official weights from the original repo -->
-        <param name="weights_path" type="str" value="$(find yolov6-ros)/weights/yolov6t.pt" />
+        <param name="weights_path" type="str" value="$(find yolov6-ros)/weights/yolov6n.pt" />
         <!-- topic name to subscribe to -->
         <param name="img_topic" type="str" value="/zed2i/zed_node/left_raw/image_raw_color" />
         <!-- topic name for the detection output -->
